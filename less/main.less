@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import "banner";
+
+@import "mixins";
+
+@import "topBar";
+
+@num:7;
+ul{
+  width: 100%*@num;
+  li{
+    width: 100%/@num;
+    color: red+yellow+blue;
+    background: gray*3;
+    //内置函数
+    border-color: darken(red,20%);
+  }
+}

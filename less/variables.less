@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*注释：在css当中可以使用，所有编译的过程当中生成*/
+//css不支持，不会编译在css文件
+@mainColor:#666;
+@className:box;
+div {
+  background: @mainColor;
+}
+a:hover {
+  color: @mainColor;
+}
+//变量用于字符拼接使用方法
+.@{className} {
+  color: @mainColor;
+}
